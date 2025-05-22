@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE imobiliaria SYSTEM "definicoes.dtd">
+
+<imobiliaria>
+    <imovel>
+        <descricao></descricao>
+
+        <proprietario>
+            <nome></nome>
+            <email></email>
+            <telefone></telefone>
+            
+        </proprietario>
+
+        <endereco>
+            <rua></rua>
+            <bairro></bairro>
+            <cidade></cidade>
+            <numero></numero>
+            
+        </endereco> 
+
+        <caracteristicas>
+            <tamanho></tamanho>
+            <numQuartos></numQuartos>
+            <numBanheiros></numBanheiros>
+           
+        </caracteristicas>
+
+        <valor></valor>
+    </imovel>
+</imobiliaria>
