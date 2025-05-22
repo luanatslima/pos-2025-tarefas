@@ -10,3 +10,4 @@
 <!ELEMENT tempo (#PCDATA)>
 <!ELEMENT preco (#PCDATA)>
 <!ATTLIST preco moeda CDATA #REQUIRED>
+<!ENTITY reais "R$">
