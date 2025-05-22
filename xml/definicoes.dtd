@@ -1,5 +1,5 @@
 <!ELEMENT cardapio (prato+)>
-<!ELEMENT prato (nome, descricao, ingredientes*, calorias, tempo)>
+<!ELEMENT prato (nome, descricao, ingredientes*, calorias, tempo, preco)>
 <!ATTLIST prato id CDATA #REQUIRED>
 <!ELEMENT nome (#PCDATA)>
 <!ELEMENT descricao (#PCDATA)>
@@ -8,3 +8,5 @@
 <!ATTLIST ingrediente numero CDATA #REQUIRED>
 <!ELEMENT calorias (#PCDATA)>
 <!ELEMENT tempo (#PCDATA)>
+<!ELEMENT preco (#PCDATA)>
+<!ATTLIST preco moeda CDATA #REQUIRED>

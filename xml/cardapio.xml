@@ -23,6 +23,7 @@
         </ingredientes>
         <calorias>Em 100g, tem cerca de 274 kcal</calorias>
         <tempo>4h</tempo>
+        <preco moeda="BRL">4,00</preco>
     </prato>
 
     <prato id="2">
@@ -46,6 +47,7 @@
         </ingredientes>
         <calorias>Uma porção de 100g de pão de queijo industrializado contém cerca de 280 kcal</calorias>
         <tempo>5h</tempo>
+        <preco moeda="BRL">5,00</preco>
     </prato>
 
     <prato id="3">
@@ -67,6 +69,7 @@
         </ingredientes>
         <calorias>um pão de alho tradicional de 40g (meia unidade) contém cerca de 122 calorias</calorias>
         <tempo>5h</tempo>
+        <preco moeda="BRL">4,00</preco>
     </prato>
 
     <prato id="4">
@@ -91,6 +94,7 @@
         </ingredientes>
         <calorias>100g de cuscuz cozido podem conter entre 112 e 140 calorias</calorias>
         <tempo>5h</tempo>
+        <preco moeda="BRL">7,00</preco>
     </prato>
 
     <prato id="5">
@@ -109,5 +113,6 @@
         </ingredientes>
         <calorias>212 kcal por 70g</calorias>
         <tempo>2h</tempo>
+        <preco moeda="BRL">4,00</preco>
     </prato>
 </cardapio>
