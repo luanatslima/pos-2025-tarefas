@@ -51,7 +51,9 @@
         <proprietario>
             <nome>Caio</nome>
             <email>caio@gmail.com</email>
-            <telefone numero="01">47502685466</telefone>
+            <telefones>
+                <telefone numero="01">47502685466</telefone>
+            </telefones>
         </proprietario>
         <endereco>
             <rua>Rua Azul</rua>
@@ -72,7 +74,9 @@
         <proprietario>
             <nome>Cásio</nome>
             <email>casio@gmail.com</email>
-            <telefone numero="01">01502685466</telefone>
+            <telefones>
+                <telefone numero="01">01502685466</telefone>
+            </telefones>
         </proprietario>
         <endereco>
             <rua>Rua Rosa</rua>
@@ -93,7 +97,9 @@
         <proprietario>
             <nome>Camila</nome>
             <email>camila@gmail.com</email>
-            <telefone numero="01">01503728466</telefone>
+            <telefones>
+                <telefone numero="01">01503728466</telefone>
+            </telefones>
         </proprietario>
         <endereco>
             <rua>Rua Laranja</rua>
@@ -114,7 +120,9 @@
         <proprietario>
             <nome>Catarina</nome>
             <email>catarina@gmail.com</email>
-            <telefone numero="01">01503728466</telefone>
+            <telefones>
+                <telefone numero="01">01503728466</telefone>
+            </telefones>
         </proprietario>
         <endereco>
             <rua>Rua Branca</rua>
