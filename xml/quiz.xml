@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE quiz [
+<!ELEMENT quiz (disciplina, professor, turma, data, questões)>
+    <!ATTLIST quiz versao CDATA #REQUIRED>
+    <!ELEMENT disciplina (#PCDATA)>
+    <!ELEMENT professor (nome, matrícula?)>
+        <!ELEMENT nome (#PCDATA)>
+        <!ELEMENT matrícula (#PCDATA)>
+    <!ELEMENT turma (#PCDATA)>
+    <!ELEMENT data (#PCDATA)>
+    <!ELEMENT questões (questão+)>
+        <!ELEMENT questão (enunciado, pontuação, alternativas)>
+            <!ELEMENT enunciado (#PCDATA)>
+            <!ELEMENT pontuação (#PCDATA)>
+            <!ELEMENT alternativas (alternativa+)>
+                <!ELEMENT alternativa (#PCDATA)>
+                    <!ATTLIST alternativa correta (sim|nao) #REQUIRED>
+]>
+
+<quiz versao="01">
+    <disciplina>Matemática</disciplina>
+    <professor>
+        <nome>Professor Gabriel Garcia</nome>
+        <matrícula>432678</matrícula>
+    </professor>
+    <turma>InfoWeb3M</turma>
+    <data>28/05/2025</data>
+    <questões>
+        <questão>
+            <enunciado>Qual a raiz quadrada de 144?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="sim">12</alternativa>
+                <alternativa correta="nao">13</alternativa>
+                <alternativa correta="nao">10</alternativa>
+                <alternativa correta="nao">9</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual a raiz quadrada de 25?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">15</alternativa>
+                <alternativa correta="sim">5</alternativa>
+                <alternativa correta="nao">6</alternativa>
+                <alternativa correta="nao">11</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual a raiz quadrada de 81?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">4</alternativa>
+                <alternativa correta="nao">8</alternativa>
+                <alternativa correta="nao">5</alternativa>
+                <alternativa correta="sim">9</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual a raiz quadrada de 16?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">8</alternativa>
+                <alternativa correta="nao">5</alternativa>
+                <alternativa correta="sim">4</alternativa>
+                <alternativa correta="nao">3</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual a raiz quadrada de 400?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">15</alternativa>
+                <alternativa correta="sim">20</alternativa>
+                <alternativa correta="nao">30</alternativa>
+                <alternativa correta="nao">25</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE imobiliaria [
 <!ELEMENT imobiliaria (imovel+)>
-<!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
-<!ELEMENT descricao (#PCDATA)>
-<!ELEMENT proprietario (nome, email?, telefones?)>
-<!ELEMENT nome (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT telefones (telefone+)>
-<!ELEMENT telefone (#PCDATA)>
-<!ATTLIST telefone numero CDATA #REQUIRED>
-<!ELEMENT endereco (rua, bairro, cidade, numero*)>
-<!ELEMENT rua (#PCDATA)>
-<!ELEMENT bairro (#PCDATA)>
-<!ELEMENT cidade (#PCDATA)>
-<!ELEMENT numero (#PCDATA)>
-<!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
-<!ELEMENT tamanho (#PCDATA)>
-<!ELEMENT numQuartos (#PCDATA)>
-<!ELEMENT numBanheiros (#PCDATA)>
-<!ELEMENT valor (#PCDATA)>
+    <!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+        <!ELEMENT descricao (#PCDATA)>
+        <!ELEMENT proprietario (nome, email?, telefones?)>
+            <!ELEMENT nome (#PCDATA)>
+            <!ELEMENT email (#PCDATA)>
+            <!ELEMENT telefones (telefone+)>
+                <!ELEMENT telefone (#PCDATA)>
+                    <!ATTLIST telefone numero CDATA #REQUIRED>
+        <!ELEMENT endereco (rua, bairro, cidade, numero*)>
+            <!ELEMENT rua (#PCDATA)>
+            <!ELEMENT bairro (#PCDATA)>
+            <!ELEMENT cidade (#PCDATA)>
+            <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+            <!ELEMENT tamanho (#PCDATA)>
+            <!ELEMENT numQuartos (#PCDATA)>
+            <!ELEMENT numBanheiros (#PCDATA)>
+        <!ELEMENT valor (#PCDATA)>
 ]>
 
 <imobiliaria>
