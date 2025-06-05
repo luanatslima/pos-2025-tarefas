@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE imobiliaria [
+<!ELEMENT imobiliaria (imovel+)>
+    <!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+        <!ELEMENT descricao (#PCDATA)>
+        <!ELEMENT proprietario (nome, email?, telefones?)>
+            <!ELEMENT nome (#PCDATA)>
+            <!ELEMENT email (#PCDATA)>
+            <!ELEMENT telefones (telefone+)>
+                <!ELEMENT telefone (#PCDATA)>
+                    <!ATTLIST telefone numero CDATA #REQUIRED>
+        <!ELEMENT endereco (rua, bairro, cidade, numero*)>
+            <!ELEMENT rua (#PCDATA)>
+            <!ELEMENT bairro (#PCDATA)>
+            <!ELEMENT cidade (#PCDATA)>
+            <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+            <!ELEMENT tamanho (#PCDATA)>
+            <!ELEMENT numQuartos (#PCDATA)>
+            <!ELEMENT numBanheiros (#PCDATA)>
+        <!ELEMENT valor (#PCDATA)>
+]>
+
+<imobiliaria>
+    <imovel>
+        <descricao>Pequeno e tranquilo</descricao>
+        <proprietario>
+            <nome>Carlos</nome>
+            <email>carlos@gmail.com</email>
+            <telefones>
+                <telefone numero="01">4756985466</telefone>
+                <telefone numero="02">4235793466</telefone>
+            </telefones>
+        </proprietario>
+        <endereco>
+            <rua>Rua das flores</rua>
+            <bairro>B1</bairro>
+            <cidade>Lagoa de Velhos</cidade>
+            <numero>01</numero>
+        </endereco> 
+        <caracteristicas>
+            <tamanho>40</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>2.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Pequeno e tranquilo</descricao>
+        <proprietario>
+            <nome>Caio</nome>
+            <email>caio@gmail.com</email>
+            <telefones>
+                <telefone numero="01">47502685466</telefone>
+            </telefones>
+        </proprietario>
+        <endereco>
+            <rua>Rua Azul</rua>
+            <bairro>B1</bairro>
+            <cidade>Lagoa de Velhos</cidade>
+            <numero></numero>
+        </endereco> 
+        <caracteristicas>
+            <tamanho>40</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>2.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Pequeno e tranquilo</descricao>
+        <proprietario>
+            <nome>Cásio</nome>
+            <email>casio@gmail.com</email>
+            <telefones>
+                <telefone numero="01">01502685466</telefone>
+            </telefones>
+        </proprietario>
+        <endereco>
+            <rua>Rua Rosa</rua>
+            <bairro>B2</bairro>
+            <cidade>Lagoa de Velhos</cidade>
+            <numero>04</numero>
+        </endereco> 
+        <caracteristicas>
+            <tamanho>40</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>2.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Pequeno e tranquilo</descricao>
+        <proprietario>
+            <nome>Camila</nome>
+            <email>camila@gmail.com</email>
+            <telefones>
+                <telefone numero="01">01503728466</telefone>
+            </telefones>
+        </proprietario>
+        <endereco>
+            <rua>Rua Laranja</rua>
+            <bairro>B2</bairro>
+            <cidade>Lagoa de Velhos</cidade>
+            <numero>04</numero>
+        </endereco> 
+        <caracteristicas>
+            <tamanho>40</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>2.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Pequeno e tranquilo</descricao>
+        <proprietario>
+            <nome>Catarina</nome>
+            <email>catarina@gmail.com</email>
+            <telefones>
+                <telefone numero="01">01503728466</telefone>
+            </telefones>
+        </proprietario>
+        <endereco>
+            <rua>Rua Branca</rua>
+            <bairro>B5</bairro>
+            <cidade>Lagoa de Velhos</cidade>
+            <numero>02</numero>
+        </endereco> 
+        <caracteristicas>
+            <tamanho>40</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>2.000,00</valor>
+    </imovel>
+</imobiliaria>

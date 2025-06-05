@@ -1,0 +1,19 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+
+    <element name="nome" type="string"></element>
+    <element name="refeicao" type="string"></element>
+    <element name="ingredientes" type="string"></element>
+    <element name="preco" type="string"></element>
+    <element name="dataCadastro" type="string"></element>
+
+    <element name="nome">
+        <simpleType>
+            <restriction base="integer">
+                <minInclusive value="0"/>
+                <maxInclusive value="100"/>
+            </restriction>
+        </simpleType>
+    </element>
+
+
+</schema>
