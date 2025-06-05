@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cardapio xmlns="http://cardapio.org" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://prato.org cardapio.xsd">
+        xsi:schemaLocation="http://cardapio.org cardapio.xsd">
 
 <cardapio>
     <prato id="1">
