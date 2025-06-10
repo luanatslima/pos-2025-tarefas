@@ -10,25 +10,25 @@
                 <element name="prato" maxOccurs="unbounded">
                     <complexType>
                         </sequence>
-                        <element name="nome" type="string"></element>
-                        <element name="descricao" type="string"></element>
-                        <element name="ingredientes" type="string">
-                            <complexType>
-                                <sequence>
-                                    <element name="c:ingrediente" type="string" maxOccurs="unbounded"></element>
-                                </sequence>
-                            </complexType>  
-                        </element>
-                        <element name="preco">
-                            <simpleType>
-                                <restriction base="decimal">
-                                    <fractionDigits value="2">
-                                </restriction>
-                            </simpleType>
-                        </element>
-                        <element name="tempoPreparo" type="string"></element>
-                        <element name="calorias" type="integer"></element>
-                        <attribute name="id" type="integer"></attribute>
+                            <element name="nome" type="string"></element>
+                            <element name="descricao" type="string"></element>
+                            <element name="ingredientes" type="string">
+                                <complexType>
+                                    <sequence>
+                                        <element name="c:ingrediente" type="string" maxOccurs="unbounded"></element>
+                                    </sequence>
+                                </complexType>  
+                            </element>
+                            <element name="preco">
+                                <simpleType>
+                                    <restriction base="decimal">
+                                        <fractionDigits value="2">
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="tempoPreparo" type="string"></element>
+                            <element name="calorias" type="integer"></element>
+                            <attribute name="id" type="integer"></attribute>
                         </sequence>
                     </complexType>
                 </element>

@@ -4,42 +4,60 @@
         targetNamespace="http://imobiliaria.org"
         elementFormDefault="qualified">
 
-    <element name="imovel" type="string"></element>
+    <element name="imobiliaria">
         <complexType>
             <sequence>
-                <element name="descricao" type="string"></element>
-                <element name="proprietario" type="string"></element>
-                    <element name="nome" type="string"></element>
-                    <element name="email" type="string"></element>
-                    <element name="telefones" >
-                        <complexType>
-                            <sequence>
-                                <element name="i:telefone" type="string" maxOccurs="unbounded"></element>
-                            </sequence>
-                        </complexType>
-                    </element>
-                </element>
+                <element name="imovel" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="descricao" type="string"></element>
+                            <element name="proprietario" type="string"></element>
+                                <complexType>
+                                    <sequence>
+                                        <element name="nome" type="string"></element>
+                                        <element name="email" type="string"></element>
+                                        <element name="telefones">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="i:telefone" type="string" maxOccurs="unbounded"></element>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
 
-                <element name="endereco" type="string">
-                    <element name="rua" type="string"></element>
-                    <element name="bairro" type="string"></element>
-                    <element name="cidade" type="string"></element>
-                    <element name="numero" type="integer"></element>
-                </element>
+                            <element name="endereco" type="string">
+                                <complexType>
+                                    <sequence>
+                                        <element name="rua" type="string"></element>
+                                        <element name="bairro" type="string"></element>
+                                        <element name="cidade" type="string"></element>
+                                        <element name="numero" type="integer"></element>
+                                    </sequence>
+                                </complexType>
+                            </element>
 
-                <element name="caracteristicas" type="string">
-                    <element name="tamanho">
-                        <simpleType>
-                            <restriction base="decimal">
-                                <fractionDigits value="2">
-                            </restriction>
-                        </simpleType>
-                    </element>
-                    <element name="numQuartos" type="integer"></element>
-                    <element name="numBanheiros" type="integer"></element>
+                            <element name="caracteristicas" type="string">
+                                <complexType>
+                                    <sequence>
+                                        <element name="tamanho">
+                                            <simpleType>
+                                                <restriction base="decimal">
+                                                    <fractionDigits value="2">
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="numQuartos" type="integer"></element>
+                                        <element name="numBanheiros" type="integer"></element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="valor" type="string"></element>
+                        </sequence>
+                    </complexType>
                 </element>
-                <element name="valor"></element>
             </sequence>
         </complexType>
-
+    </element>
 </schema>
