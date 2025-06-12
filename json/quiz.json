@@ -1,0 +1,72 @@
+{
+    "quiz": [
+        {
+            "disciplina": "Matemática",
+            "professor": {
+                "nome": "Professor Gabriel Garcia",
+                "matricula": "432678"
+            },
+            "turma": "InfoWeb3M",
+            "data": "28/05/2025",
+            "questões": 
+                [{"questão":
+                    [{
+                        "enunciado": "Qual a raiz quadrada de 144?",
+                        "pontuacao": "20",
+                        "alternativas": 
+                            [
+                                {"alternativa": 12},
+                                {"alternativa": 13},
+                                {"alternativa": 10},
+                                {"alternativa": 9}
+                            ]
+                    },
+                    {
+                        "enunciado": "",
+                        "pontuacao": "20",
+                        "alternativas": 
+                            [
+                                {"alternativa": 15},
+                                {"alternativa": 5},
+                                {"alternativa": 6},
+                                {"alternativa": 11}
+                            ]
+                    },
+                    {
+                        "enunciado": "",
+                        "pontuacao": "20",
+                        "alternativas": 
+                            [
+                                {"alternativa": 4},
+                                {"alternativa": 8},
+                                {"alternativa": 5},
+                                {"alternativa": 9}
+                            ]
+                    },
+                    {
+                        "enunciado": "",
+                        "pontuacao": "20",
+                        "alternativas": 
+                            [
+                                {"alternativa": 8},
+                                {"alternativa": 5},
+                                {"alternativa": 4},
+                                {"alternativa": 3}
+                            ]
+                    },
+                    {
+                        "enunciado": "",
+                        "pontuacao": "20",
+                        "alternativas": 
+                            [
+                                {"alternativa": 15},
+                                {"alternativa": 20},
+                                {"alternativa": 30},
+                                {"alternativa": 25}
+                            ]
+                        }
+                    ]
+                }]
+        }]
+        
+}
