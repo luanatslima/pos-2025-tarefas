@@ -7,7 +7,6 @@ imoveis = dados["imobiliaria"]
 
 print("Opções de Imóveis:")
 for i, item in enumerate(imoveis, start=1):
-    
     imovel = item["imovel"][0]
     rua = imovel["endereco"]["rua"]
     bairro = imovel["endereco"]["bairro"]
