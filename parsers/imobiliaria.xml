@@ -22,7 +22,7 @@
 ]>
 
 <imobiliaria>
-    <imovel id="01">
+    <imovel id="1">
         <descricao>Pequeno e tranquilo</descricao>
         <proprietario>
             <nome>Carlos</nome>
@@ -46,7 +46,7 @@
         <valor>2.000,00</valor>
     </imovel>
 
-    <imovel id="02">
+    <imovel id="2">
         <descricao>Pequeno e tranquilo</descricao>
         <proprietario>
             <nome>Caio</nome>
@@ -69,7 +69,7 @@
         <valor>2.000,00</valor>
     </imovel>
 
-    <imovel id="03">
+    <imovel id="3">
         <descricao>Pequeno e tranquilo</descricao>
         <proprietario>
             <nome>Cásio</nome>
@@ -92,7 +92,7 @@
         <valor>2.000,00</valor>
     </imovel>
 
-    <imovel id="04">
+    <imovel id="4">
         <descricao>Pequeno e tranquilo</descricao>
         <proprietario>
             <nome>Camila</nome>
@@ -115,7 +115,7 @@
         <valor>2.000,00</valor>
     </imovel>
 
-    <imovel id="05">
+    <imovel id="5">
         <descricao>Pequeno e tranquilo</descricao>
         <proprietario>
             <nome>Catarina</nome>

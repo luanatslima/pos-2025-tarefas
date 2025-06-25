@@ -1,0 +1,134 @@
+{
+    "imobiliaria":[
+        {"imovel": 
+        [{ 
+            "descricao": "Pequeno e tranquilo",
+            "proprietario": {
+                "nome": "Caio",
+                "email": [
+                    {"email": "caio@gmail.com"}
+                ],
+                "telefones": [
+                    {"telefone": "47502685466"}
+                ]
+            },
+            "endereco": {
+                "rua": "Rua Azul",
+                "bairro": "B1",
+                "cidade": "Lagoa de Velhos",
+                "numero": "03"
+            },
+            "caracteristicas": {
+                "tamanho": "40",
+                "numQuartos": "2",
+                "numBanheiros": "2"
+            },
+            "valor": "2.000,00"
+        }]
+        },
+        {"imovel": 
+        [{ 
+            "descricao": "Pequeno e tranquilo",
+            "proprietario": {
+                "nome": "Cásio",
+                "email": [
+                    {"email": "casio@gmail.com"}
+                ],
+                "telefones": [
+                    {"telefone": "01502685466"}
+                ]
+            },
+            "endereco": {
+                "rua": "Rua Rosa",
+                "bairro": "B2",
+                "cidade": "Lagoa de Velhos",
+                "numero": "04"
+            },
+            "caracteristicas": {
+                "tamanho": "40",
+                "numQuartos": "2",
+                "numBanheiros": "1"
+            },
+            "valor": "2.000,00"
+        }]
+        }, 
+        {"imovel": 
+        [{ 
+            "descricao": "Pequeno e tranquilo",
+            "proprietario": {
+                "nome": "Camila",
+                "email": [
+                    {"email": "camila@gmail.com"}
+                ],
+                "telefones": [
+                    {"telefone": "01503728466"}
+                ]
+            },
+            "endereco": {
+                "rua": "Rua Branca",
+                "bairro": "B5",
+                "cidade": "Lagoa de Velhos",
+                "numero": "04"
+            },
+            "caracteristicas": {
+                "tamanho": "40",
+                "numQuartos": "2",
+                "numBanheiros": "1"
+            },
+            "valor": "2.000,00"
+        }]
+        }, 
+        {"imovel": 
+        [{ 
+            "descricao": "Pequeno e tranquilo",
+            "proprietario": {
+                "nome": "Catarina",
+                "email": [
+                    {"email": "catarina@gmail.com"}
+                ],
+                "telefones": [
+                    {"telefone": "01503728466"}
+                ]
+            },
+            "endereco": {
+                "rua": "Rua Rosa",
+                "bairro": "B2",
+                "cidade": "Lagoa de Velhos",
+                "numero": "02"
+            },
+            "caracteristicas": {
+                "tamanho": "40",
+                "numQuartos": "2",
+                "numBanheiros": "1"
+            },
+            "valor": "2.000,00"
+        }]
+        },  
+        {"imovel": 
+        [{ 
+            "descricao": "Pequeno e tranquilo",
+            "proprietario": {
+                "nome": "Carlos",
+                "email": [
+                    {"email": "carlos@gmail.com"}
+                ],
+                "telefones": [
+                    {"telefone": "4756985466"}
+                ]
+            },
+            "endereco": {
+                "rua": "Rua das Flores",
+                "bairro": "B1",
+                "cidade": "Lagoa de Velhos",
+                "numero": "07"
+            },
+            "caracteristicas": {
+                "tamanho": "40",
+                "numQuartos": "2",
+                "numBanheiros": "1"
+            },
+            "valor": "2.000,00"
+        }]
+        }
+    ]
+}
