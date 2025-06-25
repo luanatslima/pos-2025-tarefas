@@ -4,7 +4,7 @@ dom = parse("imobiliaria.xml")
 imobiliaria = dom.documentElement
 imoveis = imobiliaria.getElementsByTagName("imovel")
 
-print("Imóveis disponíveis:")
+print("Opções de Imóveis:")
 for imovel in imoveis:
     id_imovel = imovel.getAttribute("id")
     rua = imovel.getElementsByTagName("rua")[0].firstChild.nodeValue.strip()
