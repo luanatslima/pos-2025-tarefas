@@ -21,7 +21,7 @@ if escolha.isdigit():
     if 0 <= indice < len(imoveis):
         imovel = imoveis[indice]["imovel"][0]
 
-        print("--- DETALHES DO IMÓVEL ---")
+        print("--- INFORMAÇÕES DO IMÓVEL ---")
         print(f"Descrição: {imovel['descricao']}")
         print(f"Proprietário: {imovel['proprietario']['nome']}")
         print(f"Email: {imovel['proprietario']['email'][0]['email']}")

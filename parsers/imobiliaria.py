@@ -38,7 +38,7 @@ for imovel in imoveis:
 
         valor = imovel.getElementsByTagName("valor")[0].firstChild.nodeValue.strip()
 
-        print("--- DETALHES DO IMÓVEL ---")
+        print("--- INFORMAÇÕES DO IMÓVEL ---")
         print(f"Descrição: {descricao}")
         print(f"Proprietário: {nome}")
         print(f"Email: {email}")
