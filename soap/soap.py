@@ -1,4 +1,4 @@
-import zeep
+import soap as zeep
 from xml.dom import minidom
 
 wsdl_url = "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL"
