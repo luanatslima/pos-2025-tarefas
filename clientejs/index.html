@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+<body style="margin-left: 50px; margin-top: 50px;">
+    <nav style="font-family: 'Courier New', Courier, monospace;">
+        <h1>Tarefa 16</h1>
+    </nav>
+
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Consulta Tabela FIPE</h1>
+
+    <label style="font-family: 'Courier New', Courier, monospace;" for="tipo">Tipo de veículo:</label>
+    <select class="form-select" aria-label="Default select example">
+        <option value="carros">Carro</option>
+        <option value="motos">Moto</option>
+        <option value="caminhoes">Caminhão</option>
+    </select>
+    
+
+    <label style="font-family: 'Courier New', Courier, monospace;" for="marca">Marca:</label>
+    <select id="marca"></select>
+
+    <label style="font-family: 'Courier New', Courier, monospace;" for="modelo">Modelo:</label>
+    <select id="modelo"></select>
+
+    <label style="font-family: 'Courier New', Courier, monospace;" for="ano">Ano:</label>
+    <select id="ano"></select>
+
+    <button onclick="consultarFipe()">Consultar</button>
+
+    <div id="resultado"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
