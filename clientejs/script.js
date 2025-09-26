@@ -48,21 +48,42 @@ const tipoSelect = document.getElementById('tipo');
   }
 
   async function consultarFipe() {
-    const tipo = tipoSelect.value;
-    const marca = marcaSelect.value;
-    const modelo = modeloSelect.value;
-    const ano = anoSelect.value;
-    const res = await fetch(`https://parallelum.com.br/fipe/api/v1/${tipo}/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
-    const dados = await res.json();
-    resultadoDiv.innerHTML = `
-      <h2>Resultado:</h2>
-      <p><strong>Veículo:</strong> ${dados.nome}</p>
-      <p><strong>Valor:</strong> ${dados.valor}</p>
-      <p><strong>Mês de referência:</strong> ${dados.mesReferencia}</p>
-      <p><strong>Combustível:</strong> ${dados.combustivel}</p>
-    `;
+  const tipo = tipoSelect.value;
+  const marca = marcaSelect.value;
+  const modelo = modeloSelect.value;
+  const ano = anoSelect.value;
+
+  if (!tipo || !marca || !modelo || !ano) {
+    alert("Por favor, selecione todos os campos.");
+    return;
   }
 
+  try {
+    const res = await fetch(`https://parallelum.com.br/fipe/api/v1/${tipo}/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
+    const dados = await res.json();
+
+    if (!dados || !dados.nome) {
+      resultadoDiv.innerHTML = `<p style="color:white;">Nenhum dado encontrado para essa combinação.</p>`;
+      return;
+    }
+
+    resultadoDiv.innerHTML = `
+      <div class="card text-white bg-dark mt-3">
+        <div class="card-body">
+          <h5 class="card-title">${dados.nome}</h5>
+          <p class="card-text"><strong>Valor:</strong> ${dados.valor}</p>
+          <p class="card-text"><strong>Mês de referência:</strong> ${dados.mesReferencia}</p>
+          <p class="card-text"><strong>Combustível:</strong> ${dados.combustivel}</p>
+        </div>
+      </div>
+    `;
+  } catch (error) {
+    console.error("Erro na consulta:", error);
+    resultadoDiv.innerHTML = `<p style="color:white;">Erro ao consultar a API.</p>`;
+  }
+}
+
+  
   // Carrega marcas inicialmente
   carregarMarcas();
 
