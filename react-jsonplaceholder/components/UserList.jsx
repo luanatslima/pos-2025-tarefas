@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import { getPosts } from '../api/client'
+import { getUsers } from '../api/client'
 import { Card, Container } from 'react-bootstrap'
 
-export function PostList() {
-  const [posts, setPosts] = useState([])
+export function UserList() {
+  const [posts, setUsers] = useState([])
 
   useEffect(() => {
-    getPosts().then(setPosts)
+    getUsers().then(setUsers)
   }, [])
 
   return (
@@ -15,8 +15,9 @@ export function PostList() {
       {posts.slice(0, 10).map(post => ( // Pega os 10 primeiros
         <Card key={post.id} className="mb-3 shadow-sm">
           <Card.Body>
-            <Card.Title>{post.title}</Card.Title>
-            <Card.Text>{post.body}</Card.Text>
+            <ul>
+              <li> </li>
+            </ul>
           </Card.Body>
         </Card>
       ))}
