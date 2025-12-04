@@ -24,42 +24,50 @@ function getResultadoDiv() {
 export async function carregarMarcas() {
   const tipo = getTipoSelect().value;
   const marcas = await getMarcas(tipo);
-  const marcaSelect = document.getElementById('marca');
+  const marcaSelect = getMarcaSelect();
   marcaSelect.innerHTML = '<option>Selecione</option>';
   marcas.forEach(marca => {
     marcaSelect.innerHTML += `<option value="${marca.codigo}">${marca.nome}</option>`;
   });
+
+  getModeloSelect().innerHTML = '';
+  getAnoSelect().innerHTML = '';
+  getResultadoDiv().innerHTML = '';
 }
 
 export async function carregarModelos() {
-  const tipo = tipoSelect.value;
-  const marca = marcaSelect.value;
+  const tipo = getTipoSelect().value;
+  const marca = getMarcaSelect().value;
   const data = await getModelos(tipo, marca);
+  const modeloSelect = getModeloSelect();
   modeloSelect.innerHTML = '<option>Selecione</option>';
   data.modelos.forEach(modelo => {
     modeloSelect.innerHTML += `<option value="${modelo.codigo}">${modelo.nome}</option>`;
   });
-  anoSelect.innerHTML = '';
-  resultadoDiv.innerHTML = '';
+
+  getAnoSelect().innerHTML = '';
+  getResultadoDiv().innerHTML = '';
 }
 
 export async function carregarAnos() {
-  const tipo = tipoSelect.value;
-  const marca = marcaSelect.value;
-  const modelo = modeloSelect.value;
+  const tipo = getTipoSelect().value;
+  const marca = getMarcaSelect().value;
+  const modelo = getModeloSelect().value;
   const anos = await getAnos(tipo, marca, modelo);
+  const anoSelect = getAnoSelect();
   anoSelect.innerHTML = '<option>Selecione</option>';
   anos.forEach(ano => {
     anoSelect.innerHTML += `<option value="${ano.codigo}">${ano.nome}</option>`;
   });
-  resultadoDiv.innerHTML = '';
+
+  getResultadoDiv().innerHTML = '';
 }
 
 export async function consultarFipe() {
-  const tipo = tipoSelect.value;
-  const marca = marcaSelect.value;
-  const modelo = modeloSelect.value;
-  const ano = anoSelect.value;
+  const tipo = getTipoSelect().value;
+  const marca = getMarcaSelect().value;
+  const modelo = getModeloSelect().value;
+  const ano = getAnoSelect().value;
 
   if (!tipo || !marca || !modelo || !ano) {
     alert("Por favor, selecione todos os campos.");
@@ -68,6 +76,7 @@ export async function consultarFipe() {
 
   try {
     const dados = await getVeiculo(tipo, marca, modelo, ano);
+    const resultadoDiv = getResultadoDiv();
 
     if (!dados || !dados.nome) {
       resultadoDiv.innerHTML = `<p style="color:white;">Nenhum dado encontrado para essa combinação.</p>`;
@@ -86,6 +95,6 @@ export async function consultarFipe() {
     `;
   } catch (error) {
     console.error("Erro na consulta:", error);
-    resultadoDiv.innerHTML = `<p style="color:white;">Erro ao consultar a API.</p>`;
+    getResultadoDiv().innerHTML = `<p style="color:white;">Erro ao consultar a API.</p>`;
   }
 }
